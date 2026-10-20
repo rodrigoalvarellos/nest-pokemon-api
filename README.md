@@ -11,19 +11,26 @@
 yarn install
 ```
 
-1. Tener Nest CLI instalado
+3. Tener Nest CLI instalado
 
 ```
 npm i -g @nestjs/cli
 ```
 
-1. Levantar la base de datos
+4. Levantar la base de datos
 
 ```
 docker-compose up -d
+```
+
+5. Reconstruir la base de datos con el comando
+
+````
+  http:localhost:3000/api/seed
 ```
 
 ## Stack usado
 
 - MongoDB
 - Nest
+````
