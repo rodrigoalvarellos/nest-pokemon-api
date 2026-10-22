@@ -19,6 +19,5 @@ async function bootstrap() {
     }),
   );
   await app.listen(app.get(ConfigService).getOrThrow<number>('port'));
-  console.log(process.env);
 }
 await bootstrap();

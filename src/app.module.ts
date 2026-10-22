@@ -22,6 +22,7 @@ import { JoiValidationSchema } from './config/joi.validation.js';
       inject: [ConfigService],
       useFactory: (config: ConfigService) => ({
         uri: config.getOrThrow<string>('mongodb'),
+        dbName: 'pokemondb',
       }),
     }),
     PokemonModule,
